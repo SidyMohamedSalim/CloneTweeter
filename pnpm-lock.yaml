@@ -14,6 +14,7 @@ specifiers:
   lucide-react: ^0.279.0
   next: 13.4.19
   next-auth: ^4.23.1
+  pnpm: ^5.0.0
   postcss: 8.4.29
   prisma: ^5.3.1
   react: 18.2.0
@@ -44,6 +45,7 @@ dependencies:
 
 devDependencies:
   '@types/bcrypt': 5.0.0
+  pnpm: 5.18.11
   prisma: 5.3.1
 
 packages:
@@ -2281,6 +2283,13 @@ packages:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
     engines: {node: '>= 6'}
     dev: false
+
+  /pnpm/5.18.11:
+    resolution: {integrity: sha512-vcj/C6PRLJNRv7G+L8lGHnUcbFEoNNWPy8JxHBBVS/jA1defNQJ3FpyJ6JL/+9xqWLjJGL24J1kWsXzRLM8CNw==}
+    engines: {node: '>=10.16'}
+    deprecated: In this version, a stackoverflow error happens with execa
+    hasBin: true
+    dev: true
 
   /postcss-import/15.1.0_postcss@8.4.29:
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
