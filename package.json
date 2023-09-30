@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
 
+
     "dev": "next dev",
     "build": "prisma generate && next build",
 
@@ -33,7 +34,6 @@
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
-    "prisma": "^5.3.1",
-"pnpm": "^5.0.0"
+    "prisma": "^5.3.1"
   }
 }
