@@ -3,7 +3,6 @@ import Btn from "@/components/Btn";
 import React from "react";
 import { useRouter } from "next/navigation";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { getOneFollow } from "src/db/follows";
 import { followAndUnfollow } from "../../src/db/follows";
 import toast from "react-hot-toast";
 
