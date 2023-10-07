@@ -17,8 +17,8 @@ export default function Form({ type }: { type: "login" | "register" }) {
     if (type === "login") {
       signIn("credentials", {
         redirect: false,
-        email: e.currentTarget.email.value,
-        password: e.currentTarget.password.value,
+        email: e.currentTarget.email?.value,
+        password: e.currentTarget.password?.value,
         // @ts-ignore
       }).then(({ error }) => {
         if (error) {
