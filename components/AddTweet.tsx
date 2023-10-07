@@ -3,11 +3,11 @@ import { useMutation } from "@tanstack/react-query";
 import { SendHorizonal, User2 } from "lucide-react";
 import React from "react";
 import { FormEvent } from "react";
-import { addTweetClient } from "src/db/tweet";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import AvatarUser from "./AvatarUser";
+import { addTweetClient } from "@/src/db/tweet";
 
 const AddTweet = ({
   connected,
