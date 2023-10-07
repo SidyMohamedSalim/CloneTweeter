@@ -18,8 +18,8 @@ export default function Form({ type }: { type: "login" | "register" }) {
     if (type === "login") {
       signIn("credentials", {
         redirect: false,
-        email: e.currentTarget.enail?.value,
-        password: e.currentTarget.password?.value,
+        email: formData.get("email")?.toString(),
+        password: formData.get("password")?.toString(),
         // @ts-ignore
       }).then(({ error }) => {
         if (error) {
@@ -41,8 +41,8 @@ export default function Form({ type }: { type: "login" | "register" }) {
         },
         body: JSON.stringify({
           name: formData.get("name")?.toString(),
-          email: e.currentTarget.email?.value,
-          password: e.currentTarget.password?.value,
+          email: formData.get("email")?.toString(),
+          password: formData.get("password")?.toString(),
         }),
       }).then(async (res) => {
         setLoading(false);
