@@ -14,7 +14,7 @@ import { getServerSession } from "next-auth/next";
 import Link from "next/link";
 import AvatarA from "./AvatarA";
 import Image from "next/image";
-import { formatDate } from "src/config/formatDate";
+import { formatDate } from "@/src/config/formatDate";
 
 const TweetCard = async ({ tweet }: { tweet: Tweet }) => {
   const session = await getServerSession();

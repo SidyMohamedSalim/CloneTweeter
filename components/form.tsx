@@ -13,12 +13,13 @@ export default function Form({ type }: { type: "login" | "register" }) {
 
   const onsubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget);
     setLoading(true);
     if (type === "login") {
       signIn("credentials", {
         redirect: false,
-        email: e.currentTarget.email.value,
-        password: e.currentTarget.password.value,
+        email: formData.get("email")?.toString(),
+        password: formData.get("password")?.toString(),
         // @ts-ignore
       }).then(({ error }) => {
         if (error) {
@@ -39,9 +40,9 @@ export default function Form({ type }: { type: "login" | "register" }) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          name: e.currentTarget.name.value,
-          email: e.currentTarget.email.value,
-          password: e.currentTarget.password.value,
+          name: formData.get("name")?.toString(),
+          email: formData.get("email")?.toString(),
+          password: formData.get("password")?.toString(),
         }),
       }).then(async (res) => {
         setLoading(false);
