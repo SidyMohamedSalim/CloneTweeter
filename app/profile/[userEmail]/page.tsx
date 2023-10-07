@@ -1,14 +1,13 @@
-import { getServerSession } from "next-auth";
 import React from "react";
-import prisma from "@/lib/prisma";
 import { User2 } from "lucide-react";
 import Btn from "@/components/Btn";
 import TweetCard from "@/components/TweetCard";
-import { getTweetsByEmail, getUser } from "src/server/tweet";
 import {
   getfollowings,
   getfollowers,
   calculFollows,
+  getUser,
+  getTweetsByEmail,
 } from "../../../src/server/tweet";
 
 const page = async ({ params }: { params: { userEmail: string } }) => {
