@@ -2,11 +2,11 @@
 import React from "react";
 import { User2 } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { addTweetClient } from "src/db/tweet";
 import toast from "react-hot-toast";
 import { FormEvent } from "react";
 import { useMutation } from "@tanstack/react-query";
 import Link from "next/link";
+import { addTweetClient } from "@/src/db/tweet";
 
 const ReplyTweetForm = ({
   isconnected,
