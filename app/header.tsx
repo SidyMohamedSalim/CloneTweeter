@@ -11,8 +11,8 @@ function Headers({ session }: { session: Session | null }) {
   return (
     <header className="col-span-2 h-screen  md:col-span-3 flex w-fit px-3 flex-col justify-between  max-md:items-center  border-r ">
       <div className="font-mono font-bold">
-        <div className="flex flex-col  max-md:justify-center items-center pb-4">
-          <Image src={"/logo.png"} width={60} height={60} alt={"logo"} />
+        <div className="flex flex-col  max-md:justify-center items-center p-4">
+          <Image src={"/logo.jpeg"} width={60} height={60} alt={"logo"} />
         </div>
         <div className="w-full">
           <div className="flex flex-col justify-center items-center gap-5 text-lg w-full">

@@ -17,6 +17,9 @@ export const formatDate = (date: Date | string) => {
   if (diffInDays > 0) {
     return `${diffInDays}d`;
   }
+
+  
+
   if (diffInHours > 0) {
     return `${diffInHours}h`;
   }

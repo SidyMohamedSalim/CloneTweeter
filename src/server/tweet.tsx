@@ -56,6 +56,7 @@ export const getUser = async (email: string) =>
     where: { email },
   });
 
+
 export const getfollowings = async (email: string) =>
   await prisma.followers.findMany({
     where: { userEmail: email },
@@ -68,3 +69,5 @@ export const getfollowers = async (email: string) =>
 
 export const calculFollows = (followings: Followers[]) =>
   followings.length ?? 0;
+
+
