@@ -59,6 +59,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgements
 
 - [Twitter](https://twitter.com) for the inspiration
-- [Node.js](https://nodejs.org) and [Express](https://expressjs.com) for the backend framework
-- [React](https://reactjs.org) for the frontend framework
+- [Nextjs](https://nextjs.org) for the fullstack framework
 - [Prisma](https://www.prisma.io) for the ORM
