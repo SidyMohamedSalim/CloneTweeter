@@ -14,7 +14,7 @@ This is a simple clone of the popular social media platform Twitter. It allows u
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/tweeter-clone.git
+    git clone https://github.com/yourusername/CloneTweeter.git
     cd tweeter-clone
     ```
 
@@ -48,13 +48,6 @@ This is a simple clone of the popular social media platform Twitter. It allows u
 - Sign up for a new account or log in with an existing account.
 - Start posting tweets and follow other users to see their tweets in your feed.
 
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
