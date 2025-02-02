@@ -7,9 +7,9 @@ import Providers from "./Providers";
 import Headers from "./header";
 import { getServerSession } from "next-auth/next";
 
-const title = "Next.js Prisma Postgres Auth Starter";
+const title = "Tweeter Clone";
 const description =
-  "This is a Next.js starter kit that uses Next-Auth for simple email + password login and a Postgres database to persist the data.";
+  "A Twitter clone built with Next.js, Prisma, and PostgreSQL.";
 
 export const metadata: Metadata = {
   title,
